@@ -42,7 +42,7 @@ body{
 }
 
 header#intro{
-	background:#000 url(../../images/chalkboard.jpg) center -200px no-repeat;
+	background:#000 url(../images/chalkboard.jpg) center -200px no-repeat;
 	background-attachment: fixed;
 	background-size:cover;
 	min-height:500px;
