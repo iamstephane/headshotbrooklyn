@@ -8,9 +8,13 @@
 	<link rel="shortcut icon" href="/images/favicon.ico">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/photoswipe.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/photoswipe.js"></script>
+	<script src="js/photoswipe-ui.js"></script>
+
 
 	<title>Stephane Pain | Photographer</title>
 </head>
@@ -42,39 +46,39 @@
 			<ul class="photos">
 				<li>
 					<a class="thumbnail" href="#">
-						<img src="images/avatar-1.png"/>
+						<img src="portraits/Eli_B&W_02.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
+					<a class="twitter" href="#">Eli Horne</a>
 				</li>
 				<li>
 					<a class="thumbnail" href="#">
-						<img src="images/avatar-2.png"/>
+						<img src="portraits/Glen_Selects_edits_07.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
+					<a class="twitter" href="#">Glen Munoz</a>
 				</li>
 				<li>
 					<a class="thumbnail" href="#">
-						<img src="images/avatar-3.png"/>
+						<img src="portraits/Liz&Eli_B&W_JPeg_01_v2.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
+					<a class="twitter" href="#">Liz Tan</a>
 				</li>
 				<li>
 					<a class="thumbnail" href="#">
-						<img src="images/avatar-4.png"/>
+						<img src="portraits/Madi_Shots_05.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
+					<a class="twitter" href="#">Madison</a>
 				</li>
 				<li>
 					<a class="thumbnail" href="#">
-						<img src="images/avatar-5.png"/>
+						<img src="portraits/Tom&Sofia_B&W_09_v2.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
+					<a class="twitter" href="#">Tom and Sofia</a>
 				</li>
 				<li>
 					<a class="thumbnail" href="#">
-						<img src="images/avatar-6.png"/>
+						<img src="portraits/Wendy_Selects_Edits_03.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
+					<a class="twitter" href="#">Wendy Lui</a>
 				</li>
 			</ul>
 		</div>
@@ -86,68 +90,116 @@
 				<li>
 					<div class="number-label">
 						<span class="number">1</span>
-						<h3 class="package-label">Business</h3>
+						<h3 class="package-label">Studio</h3>
 					</div>
-					<img src="images/avatar-2.png"/>
-					<p>2-hour studio shoot, great for LinkedIn, resumes, and headshots.</p>
+					<div class="thumbnail">
+						<img src="portraits/Madi_Shots_02.jpg"/>
+					</div>
+					<p>Studio shoot, great for LinkedIn, resumes, and headshots.</p>
 					<span class="price">$250</span>
-					<a href="#" class="button order order-business">Order "Business"</a>
+					<a href="#" class="button order order-business">Order "Studio"</a>
 				</li>
 				<li>
 					<div class="number-label">
 						<span class="number">2</span>
-						<h3 class="package-label">Personal</h3>
+						<h3 class="package-label">Location</h3>
 					</div>
-					<img src="images/avatar-3.png"/>
-					<p>Professional photos in your natural environment. Great for Instagram, Twitter, and Facebook.</p>
-					<span class="price">$250</span>
-					<a href="#" class="button order order-business">Order "Personal"</a>
+					<div class="thumbnail">
+						<img src="portraits/Tom&Sofia_04.jpg"/>
+					</div>
+					<p>Photos in your natural environment. Great for Instagram, Twitter, and Facebook.</p>
+					<span class="price">$400</span>
+					<a href="#" class="button order order-business">Order "Location"</a>
 				</li>
 				<li>
 					<div class="number-label">
 						<span class="number">3</span>
 						<h3 class="package-label">Combo</h3>
 					</div>
-					<img src="images/avatar-1.png"/>
-					<p>The best of both. Studio shoot and natural photos, at a 15% discount.</p>
-					<span class="price">$425</span>
+					<div class="thumbnail">
+						<img src="portraits/Tom&Sofia_07.jpg"/>
+					</div>
+					<p>The best of both. Studio shoot and photos in your natural environment.</p>
+					<span class="price">$600</span>
 					<a href="#" class="button order order-business">Order "Combo"</a>
 				</li>
 			</ol>
 		</div>
 	</footer>
+
+	<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 	<div id="typeform-stuff">
 		<a class="cancel" href="#">Cancel</a>
 		<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://eli61.typeform.com/to/uU8mKX"></iframe>
 	  <script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
 	</div>
 
-	<script>
-		$('.order').on('click', function(event){
-			event.preventDefault();
-			$('#typeform-full').addClass('fullscreen');
-			$('.cancel').show();
-		});
-
-		$('.cancel').on('click', function(event){
-			event.preventDefault();
-			$('#typeform-full').removeClass('fullscreen');
-			$('.cancel').hide();
-		});
-
-		$('.go-to-packages').on('click', function(event){
-			event.preventDefault();
-			$('body').animate({
-				scrollTop: $('#packages').offset().top
-			}, 1000);
-		});
-
-		$('.go-to-gallery').on('click', function(event){
-			event.preventDefault();
-			$('body').animate({
-				scrollTop: $('#gallery').offset().top
-			}, 1000);
-		});
-	</script>
+	<script src="js/function.js"></script>
 </body>
 </html>

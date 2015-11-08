@@ -165,7 +165,16 @@ section#gallery:before{
 
 #gallery .thumbnail{
 	width:250px;
+	height:250px;
 	margin-bottom:10px;
+	overflow: hidden;
+
+}
+
+#gallery .thumbnail img{
+	min-width:250px;
+	max-width:260px;
+	min-height:250px;
 }
 
 #gallery li a{
@@ -187,6 +196,18 @@ footer#packages .wrapper{
 
 #packages .number-label{
 	text-align:center;
+}
+
+#packages .thumbnail{
+	width:250px;
+	height:250px;
+	overflow: hidden;
+}
+
+#packages .thumbnail img{
+	min-width:250px;
+	max-width:300px;
+	min-height:250px;
 }
 
 #packages .number{
@@ -218,7 +239,7 @@ footer#packages .wrapper{
 	clear:both;
 	padding:10px;
 	overflow:hidden;
-	min-height:550px;
+	min-height:600px;
 	position:relative;
 }
 
@@ -265,10 +286,13 @@ footer#packages .wrapper{
 #packages p{
 	margin:20px 0;
 	line-height:22px;
+	min-height:80px;
 }
 
 #packages .price{
-	display:inline-block;
-	font-size:18px;
+	display:block;
+	font-size:22px;
+	font-weight:bold;
+	text-align:center;
 	margin-bottom:20px;
 }
