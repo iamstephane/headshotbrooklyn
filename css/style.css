@@ -48,6 +48,7 @@ a:hover{
 .button:hover, .button:active{
 	background:rgba(80,227,194,1);
 	transform:scale(1.05,1.05);
+	text-decoration: none;
 }
 
 header#intro{
