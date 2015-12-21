@@ -338,7 +338,7 @@ footer#packages .wrapper{
 	position:fixed;
 	top:50%;
 	left:50%;
-	width:300px;
+	max-width:350px;
 	transform:translate(-50%,-50%);
 	background:#fff;
 	padding:20px;
@@ -346,12 +346,22 @@ footer#packages .wrapper{
 	display:none;
 	color:#222;
 	z-index:20;
+	line-height:22px;
 }
 
 .content-modal h2{
 	font-weight:bold;
 	font-size:1.2em;
-	margin-bottom:15px;
+	margin-bottom:25px;
+}
+
+.content-modal ul{
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+.content-modal li{
+	margin-bottom:5px;
 }
 
 .content-modal .content{
