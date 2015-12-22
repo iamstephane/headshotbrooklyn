@@ -6,12 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="css/chocolat.css">
+	<link rel="stylesheet" href="css/style.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
 	<title>Stephane Pain | Photographer</title>
 </head>
 
@@ -26,6 +27,7 @@
 				<nav class="primary">
 					<a class="go-to-gallery" href="#gallery">Gallery</a>
 					<a class="go-to-packages" href="#packages">Packages</a>
+					<a class="follow instagram" href="http://instagram.com/iamstephanepain"><span class="fa fa-instagram"></span> Instagram</a>
 				</nav>
 			</div>
 			<div class="middle">
@@ -39,42 +41,36 @@
 	<section id="gallery">
 		<div class="wrapper">
 			<h2 class="section-label">Photo Gallery</h2>
-			<ul class="photos">
+			<ul class="photos" data-chocolat-title="Portraits">
 				<li>
-					<a class="thumbnail" href="#">
-						<img src="/images/avatar-1.png"/>
+					<a class="thumbnail chocolat-image" href="images/full-eli.png">
+						<img src="images/gallery-1-eli.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
 				</li>
 				<li>
-					<a class="thumbnail" href="#">
-						<img src="/images/avatar-2.png"/>
+					<a class="thumbnail chocolat-image" href="images/full-glen.png">
+						<img src="images/gallery-2-glen.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
 				</li>
 				<li>
-					<a class="thumbnail" href="#">
-						<img src="/images/avatar-3.png"/>
+					<a class="thumbnail chocolat-image" href="images/full-liz.png">
+						<img src="images/gallery-3-liz.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
 				</li>
 				<li>
-					<a class="thumbnail" href="#">
-						<img src="/images/avatar-4.png"/>
+					<a class="thumbnail chocolat-image" href="images/full-madison.png">
+						<img src="images/gallery-4-madison.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
 				</li>
 				<li>
-					<a class="thumbnail" href="#">
-						<img src="/images/avatar-5.png"/>
+					<a class="thumbnail chocolat-image" href="images/full-tom-sofia.png">
+						<img src="images/gallery-5-tom-sofia.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
 				</li>
 				<li>
-					<a class="thumbnail" href="#">
-						<img src="/images/avatar-6.png"/>
+					<a class="thumbnail chocolat-image" href="images/full-wendy.png">
+						<img src="images/gallery-6-wendy.jpg"/>
 					</a>
-					<a class="twitter" href="#">Brenda Thomas</a>
 				</li>
 			</ul>
 		</div>
@@ -86,68 +82,99 @@
 				<li>
 					<div class="number-label">
 						<span class="number">1</span>
-						<h3 class="package-label">Business</h3>
+						<h3 class="package-label">Studio</h3>
 					</div>
-					<img src="/images/avatar-2.png"/>
-					<p>2-hour studio shoot, great for LinkedIn, resumes, and headshots.</p>
-					<span class="price">$250</span>
-					<a href="#" class="button order order-business">Order "Business"</a>
+					<div class="thumbnail">
+						<img src="images/package-studio.png"/>
+					</div>
+					<p>Studio shoot, great for LinkedIn, resumes, and headshots. <a href="#" data-content="details-studio" class="details details-studio">Details</a></p>
+					<span class="price">$400</span>
+					<a href="#" class="button order order-business">Choose "Studio"</a>
 				</li>
 				<li>
 					<div class="number-label">
 						<span class="number">2</span>
-						<h3 class="package-label">Personal</h3>
+						<h3 class="package-label">Location</h3>
 					</div>
-					<img src="/images/avatar-3.png"/>
-					<p>Professional photos in your natural environment. Great for Instagram, Twitter, and Facebook.</p>
-					<span class="price">$250</span>
-					<a href="#" class="button order order-business">Order "Personal"</a>
+					<div class="thumbnail">
+						<img src="images/package-location.png"/>
+					</div>
+					<p>Photos in your natural environment. Great for Instagram, Twitter, and Facebook. <a href="#" data-content="details-location" class="details">Details</a></p>
+					<span class="price">$600</span>
+					<a href="#" class="button order order-business">Choose "Location"</a>
 				</li>
 				<li>
 					<div class="number-label">
 						<span class="number">3</span>
 						<h3 class="package-label">Combo</h3>
 					</div>
-					<img src="/images/avatar-1.png"/>
-					<p>The best of both. Studio shoot and natural photos, at a 15% discount.</p>
-					<span class="price">$425</span>
-					<a href="#" class="button order order-business">Order "Combo"</a>
+					<div class="thumbnail">
+						<img src="images/package-combo.jpg"/>
+					</div>
+					<p>The best of both. Studio shoot and photos in your natural environment. <a href="#" data-content="details-combo" class="details">Details</a></p>
+					<span class="price">$1000</span>
+					<a href="#" class="button order order-business">Choose "Combo"</a>
 				</li>
 			</ol>
 		</div>
+		<a href="http://instagram.com/iamstephanepain" class="follow-me"><span class="fa fa-instagram"></span> Follow me on Instagram</a>
 	</footer>
+
 	<div id="typeform-stuff">
 		<a class="cancel" href="#">Cancel</a>
 		<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://eli61.typeform.com/to/uU8mKX"></iframe>
 	  <script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
 	</div>
 
-	<script>
-		$('.order').on('click', function(event){
-			event.preventDefault();
-			$('#typeform-full').addClass('fullscreen');
-			$('.cancel').show();
-		});
+	<div class="scrim closer"></div>
+	<div class="content-modal">
+		<div class="details-studio content">
+			<h2>Studio - $400</h2>
+			<ul>
+				<li>In Studio shoot</li>
+				<li>Up to 2 hours</li>
+				<li>Up to 2 people</li>
+				<li>10 color corrected pictures</li>
+				<li>4 high-end retouched pictures</li>
+				<li>Up to 2 outfits</li>
+				<li>Unlimited usage rights</li>
+				<li>No hidden fees</li>
+			</ul>
+			<p>Questions? <a href="mailto:stephanepain007@gmail.com">Contact me</a> for more information</p>
+		</div>
+		<div class="details-location content">
+			<h2>Location - $600</h2>
+			<ul>
+				<li>On Location shoot</li>
+				<li>Up to 3 hours</li>
+				<li>Up to 3 people</li>
+				<li>Location: let's find the best location for you</li>
+				<li>15 color corrected pictures</li>
+				<li>6 high-end retouched pictures</li>
+				<li>Up to 2 outfits</li>
+				<li>Unlimited usage rights</li>
+				<li>No hidden fees</li>
+			</ul>
+			<p>Questions? <a href="mailto:stephanepain007@gmail.com">Contact me</a> for more information</p>
+		</div>
+		<div class="details-combo content">
+			<h2>Combo - $1000</h2>
+			<ul>
+				<li>In Studio and/or on location</li>
+				<li>Up to 6 hours</li>
+				<li>Up to 5 people</li>
+				<li>Location: let's find the best location for you</li>
+				<li>25 color corrected pictures</li>
+				<li>10 high-end retouched pictures</li>
+				<li>Up to 4 outfits</li>
+				<li>Unlimited usage rights</li>
+				<li>No hidden fees</li>
+			</ul>
+			<p>Questions? <a href="mailto:stephanepain007@gmail.com">Contact me</a> for more information</p>
+		</div>
+	</div>
 
-		$('.cancel').on('click', function(event){
-			event.preventDefault();
-			$('#typeform-full').removeClass('fullscreen');
-			$('.cancel').hide();
-		});
-
-		$('.go-to-packages').on('click', function(event){
-			event.preventDefault();
-			$('body').animate({
-				scrollTop: $('#packages').offset().top
-			}, 1000);
-		});
-
-		$('.go-to-gallery').on('click', function(event){
-			event.preventDefault();
-			$('body').animate({
-				scrollTop: $('#gallery').offset().top
-			}, 1000);
-		});
-	</script>
+	<script src="js/chocolat.js"></script>
+	<script src="js/function.js"></script>
 </body>
 </html>
