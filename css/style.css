@@ -367,3 +367,9 @@ footer#packages .wrapper{
 .content-modal .content{
 	display:none;
 }
+
+@media only screen and (max-device-width: 500px) {
+	.top .service{
+		display:none;
+	}
+}
