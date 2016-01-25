@@ -368,7 +368,7 @@ footer#packages .wrapper{
 	display:none;
 }
 
-@media only screen and (max-device-width: 500px) {
+@media screen and (max-width: 500px) {
 	.top .service{
 		display:none;
 	}
